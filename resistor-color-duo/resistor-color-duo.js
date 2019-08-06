@@ -1,7 +1,5 @@
-export const value = colors => {
-  return Number.parseInt(
-    `${COLORS.indexOf(colors[0])}${COLORS.indexOf(colors[1])}`
-  );
+export const value = ([firstColor, secondColor]) => {
+  return Number(`${COLORS.indexOf(firstColor)}${COLORS.indexOf(secondColor)}`);
 };
 
 export const COLORS = [
